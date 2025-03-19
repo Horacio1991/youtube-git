@@ -39,4 +39,50 @@ git commit -m "Mensaje del commit"
 git push
 ```
 
+### Comandos avanzados y colaborativos de Git:
+
+```bash
+# Crear y cambiar a una nueva rama
+git checkout -b <nombre-de-la-rama>
+
+# Cambiar a una rama existente
+git checkout <nombre-de-la-rama>
+
+# Fusionar una rama con la rama actual
+git merge <nombre-de-la-rama>
+
+# Actualizar el repositorio local con los cambios del remoto
+git pull
+
+# Ver el historial de commits
+git log
+
+# Ver las diferencias entre el área de trabajo y el área de preparación
+git diff
+
+# Resolver conflictos de fusión
+# Edita los archivos con conflictos, luego:
+git add <archivo-resuelto>
+git commit -m "Conflictos resueltos"
+
+# Eliminar una rama local
+git branch -d <nombre-de-la-rama>
+
+# Eliminar una rama remota
+git push origin --delete <nombre-de-la-rama>
+
+# Revertir un commit específico
+git revert <id-del-commit>
+
+# Restablecer el área de trabajo a un estado anterior
+git reset --hard <id-del-commit>
+
+# Etiquetar un commit
+git tag -a <nombre-de-la-etiqueta> -m "Mensaje de la etiqueta"
+
+# Subir etiquetas al repositorio remoto
+git push origin --tags
+```
+
+Estos comandos son esenciales para trabajar en equipo, gestionar ramas, resolver conflictos y mantener un flujo de trabajo eficiente.
 ¡Comienza a usar Git y GitHub para gestionar tus proyectos de manera eficiente!
